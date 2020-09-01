@@ -12,8 +12,8 @@ module.exports = {
                 }
             },
         };
-       
+
         return configuration;
     },
-   
+    publicPath: "./",
 }

@@ -39,8 +39,8 @@ export default {
         });
 
         const list = JSON.parse(localStorage.getItem('list'));
-        data.list = list;
-        data.currentID = list[list.length - 1].id;
+        data.list = list || [];
+        if (list) data.currentID = list[list.length - 1].id;
         //移除 item
         function removeHandler(id) {
             console.log(id);
